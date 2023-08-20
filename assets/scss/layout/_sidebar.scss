@@ -1,0 +1,30 @@
+.sidebar {
+    position: fixed;
+    min-width:250px ;
+}
+
+.user-pic {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+}
+
+// .nav-item{
+//     &:hover {
+//         color:lighten($color: #198754, $amount: 20%)
+//     }
+// }
+
+.active {
+    color : green;
+    position: relative;
+    &:before {
+        content: "";
+        width: 4px;
+        height: 100%;
+        background: green;
+        top:0px;
+        left: -24px;
+        position: absolute;
+    }
+}

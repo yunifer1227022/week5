@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <%- include('./layout/sidebar'); -%>
+    <div class="container vh-100">
+      <div class="row">
+        <div class="col-9 main">
+          <!-- nav - title -->
+          <div class="flex justify-content-between">
+            <!-- left -->
+            <ul class="nav nav-tabs border-0 p-4 align-center">
+              <li class="nav-item fw-bold">
+                <a class="nav-link fz-24 text-black" aria-current="page" href="#">Assignment</a>
+              </li>
+              <li class="nav-item dropdown m-auto">
+                <a class="nav-link dropdown-toggle text-black" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">All Courses</a>
+              </li>
+            </ul>
+            <!-- right -->
+            <ul class="flex">
+              <li class="m-auto">
+                <a href="#" class="text-black"><span class="material-icons">search</span></a>
+              </li>
+              <li class="ms-4 m-auto">
+                <a href="#" class="text-black"><span class="material-icons">notifications_active</span></a>
+              </li>
+            </ul>
+          </div>
+          <!-- main - section -->
+          <div class="container">
+            <div class="row">
+              <!-- left side -->
+              <ul class="flex flex-column col-5">
+                <li class="mb-1">
+                  <a href="#" class="text-black">All(4) <span class="material-icons text-success">expand_more</span></a>
+                </li>
+                <li class="border border-secondary p-2 rounded-top bg-light">
+                  <div class="flex justify-content-between mb-1">
+                    <p class="fz-14">Chapter Assignment 2</p>
+                    <p class="fz-14">4 hrs ago</p>
+                  </div>
+                  <div class="flex justify-content-between">
+                    <p class="fw-bold">Please check this file…</p>
+                    <p class="fz-12 text-secondary">Emily Wang</p>
+                  </div>
+                </li>
+                <li class="border border-secondary p-2 border-top-0">
+                  <div class="flex justify-content-between mb-1">
+                    <p class="fz-14">Chapter Assignment 1</p>
+                    <p class="fz-14">12 hrs ago</p>
+                  </div>
+                  <div class="flex justify-content-between">
+                    <p class="fw-bold">My Homework</p>
+                    <p class="fz-12 text-secondary">David Xu</p>
+                  </div>
+                </li>
+                <li class="border border-secondary p-2 border-top-0">
+                  <div class="flex justify-content-between mb-1">
+                    <p class="fz-14">Final Assignment</p>
+                    <p class="fz-14">18 hrs ago</p>
+                  </div>
+                  <div class="flex justify-content-between">
+                    <p class="fw-bold">Have a problem with this…</p>
+                    <p class="fz-12 text-secondary">Tony Wei</p>
+                  </div>
+                </li>
+                <li class="border border-secondary p-2 border-top-0 rounded-bottom rounded-1">
+                  <div class="flex justify-content-between mb-1">
+                    <p class="fz-14">Final Assignment</p>
+                    <p class="fz-14">18 hrs ago</p>
+                  </div>
+                  <div class="flex justify-content-between">
+                    <p class="fw-bold">Did I do it right?</p>
+                    <p class="fz-12 text-secondary">Christina Lin</p>
+                  </div>
+                </li>
+              </ul>
+              <!-- right side -->
+              <div class="col-7 ">
+                <p class="text-end text-secondary mb-2">2 comments</p>
+                <!-- mail content head-->
+                <div class="border border-secondary px-3 py-2 bg-light rounded-top">
+                  <div class="flex justify-content-between">
+                    <h3 class="fz-12 text-secondary">Chapter Assignment 2 / HTML&CSS <p class="fz-16 text-black fw-bold">Please check this file for me, thanks!</p></h3>
+                    <span class="material-icons my-auto">more_vert</span>
+                  </div>
+                </div>
+                <!-- mail content -->
+                <div class="pt-3 ps-3 pe-4 border border-secondary border-top-0 rounded-bottom">
+                  <!-- mail - 1 pic-->
+                  <div class="d-flex justify-content-between flex-nowrap">
+                    <div>
+                      <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week5/emilywang.jpeg?raw=true" class="user-pic rounded-circle me-2 img-fluid" alt="EmilyWang">
+                    </div>
+                    <!-- mail - 1 -內容 -->
+                    <div class="border-bottom">
+                      <h3 class="fw-bold">Emily Wang</h3>
+                      <span class="text-secondary fz-12">10:38 AM (4 hours ago)</span>
+                      <p class="fz-14 mb-3">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <span class="text-success bg-light">div</span> is bigger than the height of the <span class="text-success bg-light">img</span> ? There is a gap below the image, but it doesn’t seems to be a padding/margin.<br/> What is the gap or extra space below image?
+                      </p>
+                      <a href="#" class="px-3 py-2 bg-light border text-black align-middle rounded fw-bold mb-3 d-inline-block"><span class="material-icons align-middle me-2 py-2">attach_file</span>HW-2-David.zip</a>
+                    </div>
+                  </div>
+                  <!-- end of mail 1 -->
+                  <!--  mail reply  -->
+                  <div class="d-flex justify-content-between flex-nowrap mt-3">
+                    <div>
+                      <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week5/andychen.jpeg?raw=true" class="user-pic rounded-circle me-2 img-fluid" alt="EmilyWang">
+                    </div>
+                    <!-- mail - reply -內容 -->
+                    <div class="border-bottom">
+                      <div class="d-flex justify-content-between">
+                        <h3 class="fw-bold">Andy Chen (You)</h3>
+                        <div>
+                          <span class="material-icons me-4">star_border</span>
+                          <span class="material-icons">edit</span>
+                        </div>
+                      </div>
+                      
+                      <span class="text-secondary fz-12">13:24 AM (1 hours ago)</span>
+                      <p class="fz-14 mb-3">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.<br/> <br/>  You can: <br/> <br/> 　• adjust the  <span class="text-success bg-light">vertical-align </span>of the image to position it elsewhere (e.g. the <span class="text-success bg-light"> middle </span> ) or 　<br/> 　• change the<span class="text-success bg-light"> display </span> so it isn’t inline.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- end of mail reply -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- pagination and button -->
+          <div class="d-flex p-3 justify-content-between">
+            <div></div>
+            <div class="ms-5">
+              <span class="material-icons me-3">arrow_back_ios</span>
+              <span class="material-icons">arrow_forward_ios</span>
+            </div>
+            <div>
+              <button type="button" class="btn btn-outline-success px-4 me-3">Mark as read</button>
+              <button type="button" class="btn btn-success px-4">Reply</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
